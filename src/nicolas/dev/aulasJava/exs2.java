@@ -1,0 +1,18 @@
+package nicolas.dev.aulasJava;
+
+public class exs2 {
+    public static void main(String[] args) {
+
+        boolean possuiChaveFisica = true;
+        boolean digitouSenhaCorreta = true;
+        boolean ehAdmin = false;
+        boolean sistemaEmManutencao = false;
+
+        if (!sistemaEmManutencao && (ehAdmin || (possuiChaveFisica && digitouSenhaCorreta))) {
+            System.out.println("Acesso Permitido!");
+        } else {
+            System.out.println("Acesso Negado!");
+        }
+
+    }
+}
