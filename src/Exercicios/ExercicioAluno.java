@@ -1,4 +1,4 @@
-package nicolas.dev.aulasJava;
+package Exercicios;
 /*
 Exercício 1: Ficha de Inscrição de Aluno
 Variáveis necessárias: Crie variáveis para armazenar o nome do aluno (texto),

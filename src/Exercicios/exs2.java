@@ -1,4 +1,4 @@
-package nicolas.dev.aulasJava;
+package Exercicios;
 
 public class exs2 {
     public static void main(String[] args) {
