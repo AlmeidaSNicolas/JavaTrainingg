@@ -6,9 +6,9 @@ public class exs2 {
         boolean possuiChaveFisica = true;
         boolean digitouSenhaCorreta = true;
         boolean ehAdmin = false;
-        boolean sistemaEmManutencao = false;
+        boolean sistemaEmManutencao = true;
 
-        if (!sistemaEmManutencao && (ehAdmin || (possuiChaveFisica && digitouSenhaCorreta))) {
+        if (!sistemaEmManutencao && (!ehAdmin || (!possuiChaveFisica && !digitouSenhaCorreta))) {
             System.out.println("Acesso Permitido!");
         } else {
             System.out.println("Acesso Negado!");
