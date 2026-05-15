@@ -41,7 +41,8 @@ public class Arrays01 {
 
         Arrays.stream(nomes2).filter(n -> n.startsWith("A")).forEach(n -> System.out.println(n));
 
+        int[] numeros = {10,20,30};
 
-
+        Arrays.stream(numeros).filter(n -> n > 10).forEach((System.out::println));
     }
 }
