@@ -1,4 +1,4 @@
-package nicolas.dev.aulasJava;
+package nicolas.dev.aulasJava.IntroduçãoJava;
 
 public class estruturasDeRepeticao1 {
     public static void main(String[] args) {

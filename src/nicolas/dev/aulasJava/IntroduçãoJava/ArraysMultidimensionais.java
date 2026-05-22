@@ -1,6 +1,4 @@
-package nicolas.dev.aulasJava;
-
-import java.util.Arrays;
+package nicolas.dev.aulasJava.IntroduçãoJava;
 
 public class ArraysMultidimensionais {
     public static void main(String[] args) {

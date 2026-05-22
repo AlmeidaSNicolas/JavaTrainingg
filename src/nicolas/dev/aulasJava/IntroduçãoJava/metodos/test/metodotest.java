@@ -1,6 +1,6 @@
-package metodos.test;
+package nicolas.dev.aulasJava.IntroduçãoJava.metodos.test;
 
-import metodos.metodos;
+import nicolas.dev.aulasJava.IntroduçãoJava.metodos.metodos;
 
 public class metodotest {
     public static void main(String[] args) {

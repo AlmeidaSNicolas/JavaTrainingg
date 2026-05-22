@@ -1,7 +1,6 @@
-package nicolas.dev.aulasJava;
+package nicolas.dev.aulasJava.IntroduçãoJava;
 
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class Arrays01 {
     public static void main(String[] args) {

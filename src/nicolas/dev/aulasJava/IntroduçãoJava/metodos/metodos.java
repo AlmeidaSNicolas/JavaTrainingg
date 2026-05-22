@@ -1,4 +1,4 @@
-package metodos;
+package nicolas.dev.aulasJava.IntroduçãoJava.metodos;
 
 public class metodos {
     public void somaNumeros(){

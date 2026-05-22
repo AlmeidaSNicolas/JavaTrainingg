@@ -1,6 +1,4 @@
-package nicolas.dev.aulasJava;
-
-import org.w3c.dom.ls.LSOutput;
+package nicolas.dev.aulasJava.IntroduçãoJava;
 
 public class EstruturasCondicionaispt2 {
     public static void main(String[] args) {
