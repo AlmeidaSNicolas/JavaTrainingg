@@ -14,7 +14,7 @@ Manipulação Avançada de Dados: Transição de arrays fixos para coleções di
 
 Padrões de Mercado (Clean Code): Separação de responsabilidades em múltiplos arquivos, estruturação profissional de pacotes (packages) e convenções CamelCase.
 
-🚀 Destaque do Repositório: Mock API REST (CRUD)
+🚀 Destaque do Repositório: Mock API REST 
 O projeto mais maduro dessa pasta é uma API REST Mockada desenvolvida puramente em Java, sem a utilização de frameworks (como Spring). O objetivo foi simular o comportamento de um servidor real para entender como os dados trafegam por baixo dos panos no ecossistema de backend.
 
 📐 Arquitetura do Mini-Projeto
@@ -36,7 +36,7 @@ A Pegadinha da Exclusão: Resolução do clássico erro ConcurrentModificationEx
 Códigos de Status HTTP: Implementação das convenções mundiais de respostas (201 Created, 200 OK, 400 Bad Request e 404 Not Found).
 
 📁 Estrutura do Repositório
-src/
+```src/
 └── nicolas/dev/aulasJava/
     ├── AJavacoreClasses/
     │   └── dominio/
@@ -47,6 +47,7 @@ src/
     │           ├── ApiResponse.java
     │           └── UserController.java
     └── [Outros treinos e exercícios de lógica e fundamentos]
+```
     
 💻 Saída Esperada dos Testes (Console)
 (Só testando pra descobrir)
