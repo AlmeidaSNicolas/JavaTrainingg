@@ -1,6 +1,7 @@
 package nicolas.dev.aulasJava.AJavacoreClasses.test;
 
 import nicolas.dev.aulasJava.AJavacoreClasses.dominio.Pessoa;
+import nicolas.dev.aulasJava.AJavacoreClasses.dominio.imprimir;
 
 public class PessoaTest {
     public static void main(String[] args) {
@@ -9,6 +10,10 @@ public class PessoaTest {
         p1.nome = "Jaco";
         p1.sexo = 'M';
         p1.idade = 10;
+
+        imprimir imprime = new imprimir();
+
+        imprimir.imprimir(p1);
 
     }
 }

@@ -49,7 +49,6 @@ public class UserController {
              userRequest.getEmail() == null || userRequest.getEmail().isEmpty()) {
             return new ApiResponse(400, "Dados nao encontrados");
         }
-
         for (User u : database) {
             if (u.getId() == id) {
                 u.setNome(userRequest.getNome());
