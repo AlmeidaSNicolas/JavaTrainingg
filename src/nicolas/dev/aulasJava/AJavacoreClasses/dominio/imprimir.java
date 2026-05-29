@@ -4,6 +4,7 @@ public class imprimir {
     public static void imprimir(Pessoa Pessoa) {
         System.out.println("--------------");
 
+        Pessoa.nome = "Gokuzao";
         System.out.println(Pessoa.nome);
         System.out.println(Pessoa.sexo);
         System.out.println(Pessoa.idade);
