@@ -1,15 +1,15 @@
 package nicolas.dev.aulasJava.AJavacoreClasses.test;
 
-import nicolas.dev.aulasJava.AJavacoreClasses.dominio.Pessoa;
+import nicolas.dev.aulasJava.AJavacoreClasses.dominio.people;
 import nicolas.dev.aulasJava.AJavacoreClasses.dominio.imprimir;
 
 public class PessoaTest {
     public static void main(String[] args) {
-        Pessoa p1 = new Pessoa();
+        people p1 = new people();
 
-        p1.nome = "Jaco";
+        p1.setNome("Maria");
+        p1.setIdade(21);
         p1.sexo = 'M';
-        p1.idade = 10;
 
         imprimir imprime = new imprimir();
 

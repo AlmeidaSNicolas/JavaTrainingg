@@ -7,7 +7,7 @@ public class testValidator {
 
         validator v1 = new validator();
 
-        v1.podeVotar(14);
+        v1.podeVotar(1000);
 
     }
 }

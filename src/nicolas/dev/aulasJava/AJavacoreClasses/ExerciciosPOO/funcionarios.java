@@ -1,9 +1,9 @@
 package nicolas.dev.aulasJava.AJavacoreClasses.ExerciciosPOO;
 
 public class funcionarios {
-    public String nome;
-    public int idade;
-    public double[] salario2;
+    private String nome;
+    private int idade;
+    private double[] salario2;
 
 
     public void imprimirDados(){
@@ -23,6 +23,27 @@ public class funcionarios {
         System.out.println(" \n Media final: " + media);
     }
 
-    
+    public String getNome() {
+        return nome;
+    }
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public double[] getSalario2() {
+        return salario2;
+    }
+
+    public void setSalario2(double[] salario2) {
+        this.salario2 = salario2;
+    }
 }

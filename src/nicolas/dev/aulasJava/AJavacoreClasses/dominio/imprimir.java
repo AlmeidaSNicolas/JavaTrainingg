@@ -1,12 +1,12 @@
 package nicolas.dev.aulasJava.AJavacoreClasses.dominio;
 
 public class imprimir {
-    public static void imprimir(Pessoa Pessoa) {
+    public static void imprimir(people Pessoa) {
         System.out.println("--------------");
 
-        Pessoa.nome = "Gokuzao";
-        System.out.println(Pessoa.nome);
+
+        System.out.println(Pessoa.getNome());
         System.out.println(Pessoa.sexo);
-        System.out.println(Pessoa.idade);
+        System.out.println(Pessoa.getIdade());
     }
 }

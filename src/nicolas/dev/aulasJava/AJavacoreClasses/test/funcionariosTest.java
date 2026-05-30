@@ -9,13 +9,13 @@ public class funcionariosTest {
 
         funcionarios f2 = new funcionarios();
 
-        f1.nome = "Nicolas";
-        f1.idade = 21;
-        f1.salario2 = new double[]{12000, 2130, 4000};
+        f1.setNome("Nicolas");
+        f1.setIdade(21);
+        f1.setSalario2(new double[]{1000, 2130, 3500});
 
-        f2.nome = "Nicolas";
-        f2.idade = 21;
-        f2.salario2 = new double[]{12000, 210000, 4000};
+        f2.setNome("Pedro");
+        f2.setIdade(20);
+        f2.setSalario2(new double[]{1000, 2000, 4000});
 
         f1.imprimirDados();
         f1.media();
