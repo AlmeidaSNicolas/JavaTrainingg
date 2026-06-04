@@ -1,6 +1,6 @@
-package nicolas.dev.aulasJava.AJavacoreClasses.Fexercicios.test;
+package nicolas.dev.aulasJava.AJavacoreClasses.F2exercicios.test;
 
-import nicolas.dev.aulasJava.AJavacoreClasses.Fexercicios.dominio.tensao;
+import nicolas.dev.aulasJava.AJavacoreClasses.F2exercicios.dominio.tensao;
 
 public class tensaoTest {
     public static void main(String[] args) {

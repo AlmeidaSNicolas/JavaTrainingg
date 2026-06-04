@@ -1,4 +1,4 @@
-package nicolas.dev.aulasJava.AJavacoreClasses.Fexercicios.dominio;
+package nicolas.dev.aulasJava.AJavacoreClasses.F2exercicios.dominio;
 
 public class fontes {
     private String nome;
