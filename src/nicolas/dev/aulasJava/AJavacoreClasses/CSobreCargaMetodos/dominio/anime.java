@@ -7,9 +7,6 @@ public class anime {
     private String genero;
 
 
-
-
-
     public void init(String nome, String tipo, int episodios){
         this.nome = nome;
         this.tipo = tipo;
@@ -20,6 +17,8 @@ public class anime {
         this.init(nome, tipo, episodios);
         this.genero = genero;
     }
+
+
 
     public void imprime(){
         System.out.println(this.nome);
