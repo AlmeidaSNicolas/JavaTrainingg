@@ -1,6 +1,6 @@
-package nicolas.dev.aulasJava.AJavacoreClasses.Fexercicios.test;
+package nicolas.dev.aulasJava.AJavacoreClasses.F2exercicios.test;
 
-import nicolas.dev.aulasJava.AJavacoreClasses.Fexercicios.dominio.fontes;
+import nicolas.dev.aulasJava.AJavacoreClasses.F2exercicios.dominio.fontes;
 
 public class fontesTest {
     public static void main(String[] args) {

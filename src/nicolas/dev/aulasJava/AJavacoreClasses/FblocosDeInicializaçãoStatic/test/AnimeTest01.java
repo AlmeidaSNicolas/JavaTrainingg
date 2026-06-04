@@ -1,6 +1,6 @@
-package nicolas.dev.aulasJava.AJavacoreClasses.FblocosDeInicialização.test;
+package nicolas.dev.aulasJava.AJavacoreClasses.FblocosDeInicializaçãoStatic.test;
 
-import nicolas.dev.aulasJava.AJavacoreClasses.FblocosDeInicialização.domain.Anime;
+import nicolas.dev.aulasJava.AJavacoreClasses.FblocosDeInicializaçãoStatic.domain.Anime;
 
 public class AnimeTest01 {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package nicolas.dev.aulasJava.AJavacoreClasses.Fexercicios.test;
+package nicolas.dev.aulasJava.AJavacoreClasses.F2exercicios.test;
 
-import nicolas.dev.aulasJava.AJavacoreClasses.Fexercicios.dominio.UsuarioTelegram;
+import nicolas.dev.aulasJava.AJavacoreClasses.F2exercicios.dominio.UsuarioTelegram;
 
 public class inscriçõesBotTest {
     public static void main(String[] args) {
