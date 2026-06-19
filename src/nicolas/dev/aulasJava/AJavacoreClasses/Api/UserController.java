@@ -1,4 +1,4 @@
-package nicolas.dev.aulasJava.AJavacoreClasses.BintroduçãoMetodos.dominio.Api;
+package nicolas.dev.aulasJava.AJavacoreClasses.Api;
 
 import java.util.ArrayList;
 import java.util.List;

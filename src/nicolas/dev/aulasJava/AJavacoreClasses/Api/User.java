@@ -1,4 +1,4 @@
-package nicolas.dev.aulasJava.AJavacoreClasses.BintroduçãoMetodos.dominio.Api;
+package nicolas.dev.aulasJava.AJavacoreClasses.Api;
 
 public class User {
     private int id;
