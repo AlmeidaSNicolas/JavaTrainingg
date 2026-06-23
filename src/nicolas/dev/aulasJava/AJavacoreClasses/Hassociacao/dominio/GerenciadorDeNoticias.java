@@ -12,16 +12,15 @@ public class GerenciadorDeNoticias {
     ArrayList<Noticia> Noticias = new ArrayList<>();
 
     public void adicionarNoticia(Noticia n) {
-        // 1. Fail Fast de segurança para evitar erro de NullPointerException
         if (n == null || n.getTitulo() == null) {
             System.out.println("Não consigo adicionar notícias nulas ou sem título.");
-            return; // O 'return' encerra a execução do método imediatamente aqui
+            return;
         }
 
-        // 2. Variável de controle para checar duplicata
+
         boolean duplicada = false;
 
-        // 3. Percorre a lista para comparar o título da nova notícia com as que já existem
+
         for (Noticia noticiaExistente : Noticias) {
             if (noticiaExistente.getTitulo().equals(n.getTitulo())) {
                 duplicada = true;
@@ -29,7 +28,7 @@ public class GerenciadorDeNoticias {
             }
         }
 
-        // 4. Decisão final com base na checagem
+
         if (duplicada) {
             System.out.println("Notícia já existe! Não consigo adicionar notícias duplicadas.");
         } else {

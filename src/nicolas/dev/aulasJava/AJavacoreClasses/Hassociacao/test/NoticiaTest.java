@@ -17,6 +17,7 @@ public class NoticiaTest {
 
         g1.adicionarNoticia(n1);
 
+        g1.quantidadeDeNoticias();
 
 
     }
