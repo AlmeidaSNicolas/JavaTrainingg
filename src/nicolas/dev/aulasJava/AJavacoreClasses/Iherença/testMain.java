@@ -13,6 +13,7 @@ public class testMain {
         Funcionario f1 = new Funcionario("Joao", "44355687311", e2, 12000);
 
         f1.imprimir();
+        f1.relatorioSalario();
 
     }
 }
