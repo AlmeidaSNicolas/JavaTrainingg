@@ -8,6 +8,4 @@ public class RegistroCorrida {
     private double distanciaKm;
     private int duracaoMinutos;
     private String clima;
-
-
 }
