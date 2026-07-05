@@ -8,7 +8,6 @@ public class MainCorrida {
         corridaDeHoje.setDuracaoMinutos(80);
         corridaDeHoje.setDistanciaKm(10);
 
-
         System.out.println(corridaDeHoje);
     }
 }
