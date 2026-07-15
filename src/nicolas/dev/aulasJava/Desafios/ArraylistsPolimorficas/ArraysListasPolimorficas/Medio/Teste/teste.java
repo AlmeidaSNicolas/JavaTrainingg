@@ -15,8 +15,6 @@ public class teste {
         playlist.add(new Musica("Luz", "LuzMC"));
         playlist.add(new Musica("Luz", "AguaMC"));
 
-        playlist.set(1 = new Musica("Vai safada", "Mc canalha"));
-
         playlist.remove(2);
 
         Musica hit = new Musica("Chitanzin e borogodo", "Vai canalha");
