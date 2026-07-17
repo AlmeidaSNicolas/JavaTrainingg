@@ -1,7 +1,5 @@
 package nicolas.dev.aulasJava.Desafios.ArraylistsPolimorficas.ArraysListasPolimorficas;
 
-import nicolas.dev.aulasJava.AJavacoreClasses.Polimorfismo.dominio.Produto;
-
 import java.util.ArrayList;
 import java.util.List;
 
