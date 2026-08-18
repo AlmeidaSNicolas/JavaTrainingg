@@ -10,8 +10,6 @@ public class passaporte {
         System.out.println();
     }
 
-
-
     public passaporte(String nome, int dataNascimento, String numeroPassaporte) {
         this.nome = nome;
         this.dataNascimento = dataNascimento;

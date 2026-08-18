@@ -13,7 +13,6 @@ public class LoginInvalidoTest01 {
         }
 
     }
-
     private static void logar() throws LoginInvalidoException {
         Scanner sc = new Scanner(System.in);
         String usernameDb = "Nicolas";
