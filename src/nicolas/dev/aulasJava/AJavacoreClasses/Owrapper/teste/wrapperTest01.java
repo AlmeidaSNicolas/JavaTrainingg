@@ -21,6 +21,9 @@ public class wrapperTest01 {
         System.out.println("teste Byte " + btw2);
         System.out.println(verdadeiro);
 
+        Integer itw2 = Integer.parseInt("10");
+        System.out.println(itw2);
+
 
 
     }
