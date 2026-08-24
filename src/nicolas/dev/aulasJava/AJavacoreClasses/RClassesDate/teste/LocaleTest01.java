@@ -2,6 +2,7 @@ package nicolas.dev.aulasJava.AJavacoreClasses.RClassesDate.teste;
 
 import java.sql.SQLOutput;
 import java.text.DateFormat;
+import java.text.NumberFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -15,7 +16,6 @@ public class LocaleTest01 {
         c1.add(Calendar.DAY_OF_MONTH, 10);
 
         System.out.println(c1.getTime());
-
 
         Date d1 = new Date();
         Locale l1 = new Locale("Pt", "BR");
@@ -39,6 +39,10 @@ public class LocaleTest01 {
             throw new RuntimeException(e);
         }
 
+        Locale l3 = new Locale("Ja","JP" );
+        double moedaLocal = 10;
+        NumberFormat numberFormat = NumberFormat.getCurrencyInstance(l3);
+        System.out.println(numberFormat.format(moedaLocal));
 
     }
 }
