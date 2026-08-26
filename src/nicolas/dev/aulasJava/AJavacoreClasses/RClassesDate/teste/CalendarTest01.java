@@ -8,6 +8,7 @@ public class CalendarTest01 {
         Calendar c1 = Calendar.getInstance();
         Date date = c1.getTime();
 
+        Calendar.getInstance();
         System.out.println(date);
     }
 }

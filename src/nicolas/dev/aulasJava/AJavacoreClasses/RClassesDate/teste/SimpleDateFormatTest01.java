@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class SimpleDateFormatTest01 {
     public static void main(String[] args) {
-        String mascara = "yyyy.MM.dd G 'at' HH:mm:ss z ";
+        String mascara = "'Spain' dd 'de' MMMM 'de' YYYY";
         SimpleDateFormat spdf = new SimpleDateFormat(mascara);
         System.out.println(spdf.format(new Date()));
 
