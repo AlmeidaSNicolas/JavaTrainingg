@@ -11,10 +11,10 @@ public class SimpleDateFormatTest01 {
         SimpleDateFormat spdf = new SimpleDateFormat(mascara);
         System.out.println(spdf.format(new Date()));
 
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Digite seu nome :");
         String nome = scanner.nextLine();
-
         if (nome.equals("Nicolas")) {
             System.out.println(spdf.format(new Date()));
         }else{
