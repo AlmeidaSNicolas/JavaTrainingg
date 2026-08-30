@@ -1,6 +1,7 @@
 package nicolas.dev.aulasJava.AJavacoreClasses.RClassesDate.teste;
 
 import java.time.Instant;
+import java.time.temporal.ChronoField;
 
 public class InstantTest01 {
     public static void main(String[] args) {
@@ -28,5 +29,8 @@ public class InstantTest01 {
         System.out.println(t1.toEpochMilli()); //capturando em milisegundo
         System.out.println(t1.getEpochSecond()); //capturando apenas Segundos
         System.out.println(t1.getNano()); //capturando nano
+
+        System.out.println(Instant.now().get(ChronoField.YEAR));
+
     }
 }

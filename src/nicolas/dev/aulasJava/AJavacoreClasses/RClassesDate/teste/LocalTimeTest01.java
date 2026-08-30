@@ -1,5 +1,7 @@
 package nicolas.dev.aulasJava.AJavacoreClasses.RClassesDate.teste;
 
+import nicolas.dev.aulasJava.AJavacoreClasses.Hassociacao.EXfinal.Local;
+
 import java.sql.SQLOutput;
 import java.time.LocalTime;
 
@@ -16,6 +18,12 @@ public class LocalTimeTest01 {
         System.out.println("Exemplo data digitada a dedo : " + localTof);
 
         System.out.println("Exemplo data de agora : " + localT);
+
+        LocalTime teste1 = LocalTime.of(14, 30);
+        LocalTime teste2 = LocalTime.of(14,30,15,500);
+
+        LocalTime teste3 = LocalTime.parse("23:59:00");
+        System.out.println(teste3);
 
 
     }

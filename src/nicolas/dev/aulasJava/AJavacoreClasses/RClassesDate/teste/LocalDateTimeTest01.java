@@ -3,10 +3,7 @@ package nicolas.dev.aulasJava.AJavacoreClasses.RClassesDate.teste;
 import nicolas.dev.aulasJava.AJavacoreClasses.Hassociacao.EXfinal.Local;
 
 import java.text.ParseException;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.time.Month;
+import java.time.*;
 
 public class LocalDateTimeTest01 {
     public static void main(String[] args) {
@@ -61,6 +58,9 @@ public class LocalDateTimeTest01 {
         LocalDateTime localMudado = l12.plusDays(12);
         System.out.println(localMudado);
 
+        LocalDateTime lteste = LocalDateTime.now();
+        lteste.atOffset(ZoneOffset.UTC);
+        System.out.println(lteste + " Exercicio exibido aqui ");
 
     }
 }
