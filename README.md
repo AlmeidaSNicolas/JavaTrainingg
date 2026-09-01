@@ -24,7 +24,7 @@ Um panorama rápido do que já foi dominado e do que vem pela frente. Serve tant
 | ✅ | Testes automatizados (JUnit) e uso do Lombok |
 | ✅ | Tratamento de Exceções (checked/unchecked, `finally`, exceções customizadas) |
 | ✅ | **Core API & Classes Utilitárias (Wrapper Classes, Strings, Dates & Java Time API)** |
-| 🔄 | **Manipulação de Recursos & I/O** |
+| 🔄 | **Manipulação de Recursos, Fusos Horários (ZonedDateTime) & I/O** |
 | ⏳ | Generics avançado, Streams & Lambdas |
 | ⏳ | Próximo grande salto: **Spring Boot** |
 
@@ -39,11 +39,11 @@ Os conceitos abaixo já estão aplicados nos códigos deste repositório:
 * **Hierarquia e Abstração:** Herança, sobrescrita de métodos, modificador `final`, classes abstratas, interfaces e polimorfismo.
 * **Enums:** Modelagem de conjuntos fixos de constantes com comportamento.
 * **Manipulação de Dados em Memória:** Transição de arrays fixos para coleções dinâmicas com `List` e `ArrayList`, incluindo desafios que combinam coleções e polimorfismo.
-* **Tratamento de Exceções:** Diferença entre exceções *checked* e *unchecked*, lançamento controlado, bloco `finally` e criação de exceções personalizadas de domínio.
+* **Tratamento de Exceções:** Diferença entre exceções *checked* e *unchecked*, lançamento controlled, bloco `finally` e criação de exceções personalizadas de domínio.
 * **Classes Utilitárias e API Moderna de Datas:**
     * **Wrapper Classes:** Autoboxing, unboxing e comportamento de tipos primitivos envelopados.
     * **Strings & Imutabilidade:** Comportamento de manipulação de textos no Heap e String Pool.
-    * **Java Time API (`java.time`):** Uso de `LocalDate`, `LocalTime`, `LocalDateTime`, timestamps universais com `Instant` (UTC/Zulu Time), medição de intervalos com `Duration` e formatação customizada via `DateTimeFormatter`.
+    * **Java Time API (`java.time`):** Manipulação de datas e horas com `LocalDate`, `LocalTime`, `LocalDateTime`, auditoria UTC com `Instant`, cálculo de prazos com `Period`, medição de SLAs com `Duration`, métricas e truncamento de logs com `ChronoUnit` e formatação customizada via `DateTimeFormatter`.
 * **Qualidade e Ferramental:** Testes automatizados com **JUnit**, uso do **Lombok** para reduzir boilerplate e organização profissional em pacotes (*packages*) seguindo convenções Java.
 
 ---
@@ -65,29 +65,31 @@ Para simular um fluxo de trabalho profissional e manter o histórico de estudos 
 ### Vantantages dessa abordagem
 * **Histórico de evolução claro:** Dá pra rastrear exatamente o que foi aprendido e implementado em cada bloco de estudos.
 * **Sandbox isolado por tópico:** Posso errar, refatorar e testar conceitos complexos sem poluir o código dos módulos já consolidados.
-* **Separação de responsabilidades:** Os projetos e exercícios seguem divisões em pacotes como `domain`, `test` e `service`, aproximando o código dos padrões de mercado.
+* **Separação de responsabilidades:** Os projetos e exercícios seguem divisões em pacotes como `domain`, `test`, `service` e pacotes específicos para `desafios`, aproximando o código dos padrões de mercado.
 
 ---
 
 ## 🚀 Projetos e Exercícios em Destaque
 
-### 1. Sistema de Monitoramento de SLA de Pedidos (`nicolas.dev.aulasJava.AJavacoreClasses.RClassesDate.teste.SlaOrderService`)
-Simulação prática de um serviço de checkout e backend e-commerce para medir tempos de processamento e projeção de entregas usando a API moderna do Java (`java.time`).
-* Marcação de auditoria com `Instant` em tempo UTC.
-* Projeção de entregas locais combinando `LocalDateTime` e `DateTimeFormatter`.
-* Cálculo e extração de métricas de performance em milissegundos usando `Duration`.
+### 1. Delivery Core — Sistema de Logística & Auditoria (`DeliveryServiceTest`)
+Simulação completa de um pipeline backend para e-commerce e logística utilizando a suite `java.time`:
+* Registro e auditoria universal em UTC utilizando `Instant`.
+* Projeção de prazos de entrega e validade de assinaturas combinando `LocalDateTime`, `Period` e `DateTimeFormatter`.
+* Medição de SLA de processamento de notas e estoque em milissegundos com `Duration`.
+* Consolidação de métricas de fidelidade do cliente e truncamento de timestamps para agrupamento de logs em banco de dados usando `ChronoUnit`.
 
-### 2. Mock API REST em Vanilla Java
+### 2. Sistema de Monitoramento de SLA de Pedidos (`SlaOrderService`)
+Serviço prático de cálculo de SLA e checkout, calculando janelas de atendimento, atrasos e tempos de resposta do servidor.
+
+### 3. Gestão de Contratos e Assinaturas (`ContractService`)
+Gerenciamento de vigência de planos com cálculo de renovação em anos, meses e dias utilizando `Period`.
+
+### 4. Mock API REST em Vanilla Java
 Uma API REST *mockada* desenvolvida puramente em Java, **sem frameworks**, simulando o comportamento de um servidor real para entender como os dados trafegam por baixo dos panos.
-
-**Arquitetura desacoplada por responsabilidade:**
-* `User.java` — Entidade que representa o modelo de dados a ser persistido.
-* `UserRequest.java` — DTO (*Data Transfer Object*) para trafegar os payloads do cliente com segurança.
+* `User.java` — Entidade do modelo de dados.
+* `UserRequest.java` — DTO (*Data Transfer Object*) para payloads do cliente.
 * `ApiResponse.java` — Envelope padrão de respostas com `statusCode` e `message`.
-* `UserController.java` — O "coração" da API: rotas de cadastro (POST), listagem (GET), edição (PUT) e exclusão (DELETE).
-
-### 3. Módulo de Exceções & Testes Automatizados
-Exercícios de tratamento de exceções já estruturados com separação de pacotes de domínio e testes com JUnit, cobrindo cenários de *runtime* e regras de negócio de alta fidelidade.
+* `UserController.java` — Rotas de cadastro (POST), listagem (GET), edição (PUT) e exclusão (DELETE).
 
 ---
 
@@ -101,8 +103,6 @@ src/
         ├── BintroduçãoMetodos.dominio/           # Métodos e parâmetros
         ├── CSobreCargaMetodos/                  # Sobrecarga de métodos
         ├── Dconstrutores/                       # Construtores
-        ├── F2exercicios/                        # Exercícios de fixação
-        ├── GexerciciosVoo/                      # Domínio "Voo"
         ├── Hassociacao/                         # Associação entre objetos
         ├── Iherenca/                            # Herança
         ├── JSobreescrita/                       # Sobrescrita de métodos
@@ -114,5 +114,7 @@ src/
         ├── Owrapper.teste/                      # Autoboxing e Wrapper Classes
         ├── Pexception/                          # Tratamento de exceções e testes JUnit
         ├── QclassesUtilitariasString.test/      # Imutabilidade e métodos de String
-        ├── RclassesDate.teste/                  # API Moderna (LocalDate, LocalTime, Instant, Duration)
-        └── nicolas.dev.aulasJava.AJavacoreClasses.RClassesDate.teste.SlaOrderService.java                 # Serviço prático de cálculo de SLA de pedidos
+        ├── RclassesDate.teste/                  # API Moderna (Aulas e testes de conceitos)
+        └── Desafios/                            # Miniprojetos e Desafios de Consolidação
+            ├── Core/                            # Gerenciador de Tarefas, etc.
+            └── Date/                            # DeliveryServiceTest, SlaOrderService, ContractService, RegistrationDonate
