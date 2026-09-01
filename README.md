@@ -71,7 +71,7 @@ Para simular um fluxo de trabalho profissional e manter o histórico de estudos 
 
 ## 🚀 Projetos e Exercícios em Destaque
 
-### 1. Sistema de Monitoramento de SLA de Pedidos (`SlaOrderService`)
+### 1. Sistema de Monitoramento de SLA de Pedidos (`nicolas.dev.aulasJava.AJavacoreClasses.RClassesDate.teste.SlaOrderService`)
 Simulação prática de um serviço de checkout e backend e-commerce para medir tempos de processamento e projeção de entregas usando a API moderna do Java (`java.time`).
 * Marcação de auditoria com `Instant` em tempo UTC.
 * Projeção de entregas locais combinando `LocalDateTime` e `DateTimeFormatter`.
@@ -115,4 +115,4 @@ src/
         ├── Pexception/                          # Tratamento de exceções e testes JUnit
         ├── QclassesUtilitariasString.test/      # Imutabilidade e métodos de String
         ├── RclassesDate.teste/                  # API Moderna (LocalDate, LocalTime, Instant, Duration)
-        └── SlaOrderService.java                 # Serviço prático de cálculo de SLA de pedidos
+        └── nicolas.dev.aulasJava.AJavacoreClasses.RClassesDate.teste.SlaOrderService.java                 # Serviço prático de cálculo de SLA de pedidos
