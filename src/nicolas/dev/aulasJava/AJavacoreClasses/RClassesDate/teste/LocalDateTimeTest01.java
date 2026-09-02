@@ -4,6 +4,7 @@ import nicolas.dev.aulasJava.AJavacoreClasses.Hassociacao.EXfinal.Local;
 
 import java.text.ParseException;
 import java.time.*;
+import java.time.format.DateTimeFormatter;
 
 public class LocalDateTimeTest01 {
     public static void main(String[] args) {
@@ -43,7 +44,11 @@ public class LocalDateTimeTest01 {
 
         LocalDateTime lcdt2 = lnow.atTime(localTime);
         System.out.println(lcdt2);
-
+        LocalDate l21 = LocalDate.now();
+        LocalTime l22 = LocalTime.now();
+        LocalDateTime testeL2122 = l21.atTime(l22);
+        DateTimeFormatter brasil = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+        System.out.println(testeL2122.format(brasil) + " Teste attime");
 
         System.out.println("Exemplo de imutabilidade da classe");
         LocalDateTime localVideo1 = LocalDateTime.now();
