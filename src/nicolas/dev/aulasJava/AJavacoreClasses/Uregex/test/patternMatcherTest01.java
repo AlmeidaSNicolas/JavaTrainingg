@@ -7,7 +7,6 @@ public class patternMatcherTest01 {
     public static void main(String[] args) {
 
 
-
         String regex = "\\W";
         String texto = "hh321kj @#$ _12";
         Pattern pattern = Pattern.compile(regex);

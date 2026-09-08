@@ -1,6 +1,8 @@
 package nicolas.dev.aulasJava.AJavacoreClasses.Sformat.teste;
 
+import java.sql.SQLOutput;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class DateTimeFormatterTest01 {
@@ -10,10 +12,13 @@ public class DateTimeFormatterTest01 {
         String s1 = date.format(DateTimeFormatter.BASIC_ISO_DATE);
         String s2 = date.format(DateTimeFormatter.ISO_DATE);
         String s3 = date.format(DateTimeFormatter.ISO_LOCAL_DATE);
+        LocalDateTime datetime = LocalDateTime.now();
+        String s4 = datetime.format(DateTimeFormatter.ISO_DATE_TIME);
 
         System.out.println(s1);
         System.out.println(s2);
         System.out.println(s3);
+        System.out.println(s4);
 
     }
 }

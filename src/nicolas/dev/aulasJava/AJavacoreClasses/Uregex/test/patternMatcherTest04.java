@@ -31,6 +31,16 @@ public class patternMatcherTest04 {
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(texto);
 
+        String regex2 = "([A.D])";
+        String texto2 = "ABCDedegeg";
+        Pattern pattern1 =Pattern.compile(regex2);
+        Matcher matcher1 = pattern1.matcher(texto2);
+
+        System.out.println("Teste expressao . ");
+        while(matcher1.find()){
+            System.out.println(matcher1.start() + " " + matcher1.group());
+        }
+
         System.out.println("Posições encontradas");
 
         while(matcher.find()){
