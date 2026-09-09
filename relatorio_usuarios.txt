@@ -1,0 +1,4 @@
+--- RELATÓRIO DE USUÁRIOS ---
+ID : 1 , Cargo : Java Developer, Nome : Nicolas
+ID : 2 , Cargo : React Developer, Nome : Ana Julia
+ID : 45 , Cargo : CTO, Nome : Jaco
