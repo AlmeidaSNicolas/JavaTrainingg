@@ -11,12 +11,10 @@ public class FileReaderTest01 {
 
 
         try(FileReader fr = new FileReader(file)){
-
             int i;
             while((i = fr.read()) != -1){
                 System.out.print((char)i);
             }
-
             System.out.println(fr.read());
         } catch (IOException e) {
             throw new RuntimeException(e);
