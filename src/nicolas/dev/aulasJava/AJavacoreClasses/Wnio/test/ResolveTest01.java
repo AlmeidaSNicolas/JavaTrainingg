@@ -1,5 +1,6 @@
 package nicolas.dev.aulasJava.AJavacoreClasses.Wnio.test;
 
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -14,6 +15,8 @@ public class ResolveTest01 {
 
         Path dir2 = Paths.get("ex/sistema/logs");
         Path arquivo2 = Paths.get("backup/LOG_CONSOLIDADO.TXT");
+
+
 
         Path resolve2 = dir2.resolve(arquivo2);
         System.out.println(resolve2);
