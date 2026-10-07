@@ -18,6 +18,7 @@ class listarTudo extends SimpleFileVisitor<Path>{
     @Override
     public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) throws IOException {
         System.out.println("pre visit " + dir.getFileName().toString());
+        System.out.println("nao estou no visit file");
         return FileVisitResult.CONTINUE;
     }
 
