@@ -24,6 +24,9 @@ public class wrapperTest01 {
         Integer itw2 = Integer.parseInt("10");
         System.out.println(itw2);
 
+        Integer it3 = 10;
+        System.out.println("Valor em bytes : " + it3.byteValue());
+
 
 
     }

@@ -4,7 +4,6 @@ public class Carro {
     private String name;
     public static final double velocidadeLimite = 250;
 
-
     public String getName() {
         return name;
     }
