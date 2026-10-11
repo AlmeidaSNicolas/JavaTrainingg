@@ -1,13 +1,18 @@
 package nicolas.dev.aulasJava.AJavacoreClasses.Api;
 
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
 public class ApiResponse {
     private int statusCode;
     private String message;
 
-    public ApiResponse(int statusCode, String message){
-        this.message = message;
-        this.statusCode = statusCode;
-    }
+
 
     public int getStatusCode(){
         return statusCode;
