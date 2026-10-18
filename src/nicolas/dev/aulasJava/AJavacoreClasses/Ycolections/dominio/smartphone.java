@@ -23,7 +23,7 @@ public class smartphone {
     // Simétrico: para x e y diferentes de null, se x.equals(y) == true logo, y.equals(x) == true
     // Transitividade: para x,y,z diferentes de null, se x.equals(y) == true, e x.equals(z) == true logo, y.equals(z) == true
     // Consistente: x.equals(x) sempre retorna true se x for diferente de null
-    // Para x diferente de null, x.equals(null) tem que retornar false.
+    // Para x diferente de null, x.equals(null) tem que retornar false
 
     @Override
     public boolean equals(Object obj) {
@@ -33,5 +33,10 @@ public class smartphone {
     smartphone smartphone = (smartphone) obj;
 
     return serialNumber != null && serialNumber.equals(smartphone.serialNumber);
+    }
+
+    @Override
+    public int hashCode() {
+        return this.serialNumber.hashCode();
     }
 }

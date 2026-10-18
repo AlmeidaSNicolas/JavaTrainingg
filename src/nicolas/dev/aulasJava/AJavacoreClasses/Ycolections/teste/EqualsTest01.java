@@ -13,7 +13,7 @@ public class EqualsTest01 {
 
         Carro c1 = new Carro("hyundai","ford");
         Carro c2 = new Carro("hyundai","ford");
-        //aqui vai dar false por conta da comparação em endereço de memoria.
+        //aqui vai dar false p or conta da comparação em endereço de memoria.
 
 
         String nul = "com dados";
@@ -23,6 +23,8 @@ public class EqualsTest01 {
 
 
         System.out.println(c1.equals(c2));
+
+        System.out.println("Bob".hashCode());
 
     }
 }
