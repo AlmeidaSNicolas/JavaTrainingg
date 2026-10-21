@@ -1,13 +1,13 @@
 package nicolas.dev.aulasJava.AJavacoreClasses.Ycolections.teste;
 
 import nicolas.dev.aulasJava.AJavacoreClasses.Ycolections.dominio.Carro;
-import nicolas.dev.aulasJava.AJavacoreClasses.Ycolections.dominio.smartphone;
+import nicolas.dev.aulasJava.AJavacoreClasses.Ycolections.dominio.celular;
 
 public class EqualsTest01 {
     public static void main(String[] args) {
 
-        smartphone s1 = new smartphone("A134B", "SAN");
-        smartphone s2 = new smartphone("A134B", "xa");
+        celular s1 = new celular("A134B", "SAN");
+        celular s2 = new celular("A134B", "xa");
 
         System.out.println(s1.equals(s2));
 

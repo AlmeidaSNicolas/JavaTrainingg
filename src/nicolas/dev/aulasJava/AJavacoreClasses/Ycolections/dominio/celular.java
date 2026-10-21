@@ -9,11 +9,11 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 
-public class smartphone {
+public class celular {
     private String serialNumber;
     private String marca;
 
-    public smartphone(String serialNumber, String marca) {
+    public celular(String serialNumber, String marca) {
         this.serialNumber = serialNumber;
         this.marca = marca;
     }
@@ -30,9 +30,17 @@ public class smartphone {
     if (obj == null) return false;
     if (this == obj) return true;
     if (this.getClass() != obj.getClass()) return false;
-    smartphone smartphone = (smartphone) obj;
+    celular celular = (celular) obj;
 
-    return serialNumber != null && serialNumber.equals(smartphone.serialNumber);
+    return serialNumber != null && serialNumber.equals(celular.serialNumber);
+    }
+
+    @Override
+    public String toString() {
+        return "celular{" +
+                "serialNumber='" + serialNumber + '\'' +
+                ", marca='" + marca + '\'' +
+                '}';
     }
 
     @Override

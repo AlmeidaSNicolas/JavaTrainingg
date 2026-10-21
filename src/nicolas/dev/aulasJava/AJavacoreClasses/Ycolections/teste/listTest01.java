@@ -11,6 +11,12 @@ public class listTest01 {
         nomes.add("lucas");
 
 
+        List<String> nomes2= new ArrayList<>();
+        nomes2.add("Joao");
+        nomes2.add("luis");
+
+        nomes.addAll(nomes2);
+
         for (int i = 0; i < nomes.size(); i++){
             System.out.println(nomes.get(i));
         }
