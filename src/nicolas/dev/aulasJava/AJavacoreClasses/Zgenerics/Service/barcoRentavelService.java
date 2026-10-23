@@ -1,24 +1,24 @@
 package nicolas.dev.aulasJava.AJavacoreClasses.Zgenerics.Service;
 
-import nicolas.dev.aulasJava.AJavacoreClasses.Zgenerics.dominio.Carro;
+import nicolas.dev.aulasJava.AJavacoreClasses.Zgenerics.dominio.Barco;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class CarroRentavelService {
-    private List<Carro> carrosdisponiveis = new ArrayList<>(List.of(new Carro("BMW"), new Carro("mercedes")));
+public class barcoRentavelService {
+    private List<Barco> barcosDisponiveis = new ArrayList<>(List.of(new Barco("lancha"), new Barco("iate")));
 
-    public Carro buscarCarroDisponivel(){
-        System.out.println("Buscando carro disponivel...");
-        Carro c = carrosdisponiveis.remove(0);
-        System.out.println("Alugando carro : " + c);
-        System.out.println("Carros disponiveis para alugar : " + carrosdisponiveis);
+    public Barco buscarBarcoDisponivel(){
+        System.out.println("Buscando Barco disponivel...");
+        Barco c = barcosDisponiveis.remove(0);
+        System.out.println("Alugando Barco : " + c);
+        System.out.println("Barco disponiveis para alugar : " + barcosDisponiveis);
         return c;
     }
 
-    public void retornarCarroAlugado(Carro carro){
-        System.out.println("Devolvendo carro " + carro);
-        carrosdisponiveis.add(carro);
-        System.out.println("Carros disponiveis para alugar : " + carrosdisponiveis);
+    public void retornarBarcoAlugado(Barco Barco){
+        System.out.println("Devolvendo Barco " + Barco);
+        barcosDisponiveis.add(Barco);
+        System.out.println("Barco disponiveis para alugar : " + barcosDisponiveis);
     }
 }
