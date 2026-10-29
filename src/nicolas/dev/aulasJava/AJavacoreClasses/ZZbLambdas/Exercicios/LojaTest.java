@@ -22,7 +22,6 @@ public class LojaTest {
 
         forEach(caros, produto -> System.out.println(produto.getNome()+ " " + produto.getPreco()));
 
-
         List<String> nomes = mapMethod(produtos, produto ->  produto.getNome());
 
         List<Double> valores = mapMethod(produtos, produto -> produto.getPreco() * produto.getQuantidade());
@@ -30,7 +29,6 @@ public class LojaTest {
         System.out.println("Sem estoque : " +semEstoque);
         System.out.println(nomes);
         System.out.println(valores);
-
 
     }
 
@@ -41,7 +39,6 @@ public class LojaTest {
 
         }
         return result;
-
     }
 
     public static <T> void forEach(List<T> list, Consumer<T>consumer){
@@ -49,7 +46,6 @@ public class LojaTest {
             consumer.accept(e);
         }
     }
-
 
     public static <T> List<T> filter(List<T> list, Predicate<T> predicate){
         List<T> filterList = new ArrayList<>();
@@ -60,5 +56,4 @@ public class LojaTest {
         }
         return filterList;
     }
-
 }
