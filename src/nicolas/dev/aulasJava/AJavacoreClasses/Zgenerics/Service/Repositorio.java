@@ -17,8 +17,8 @@ public class Repositorio<T, ID> {
        return lista;
     }
 
-    public T findById(ID id){
-       return entityMap.get(id);
+    public Optional<T> findById(ID id){
+       return Optional.ofNullable(entityMap.get(id));
     }
 
     public void deletebYid(ID id){

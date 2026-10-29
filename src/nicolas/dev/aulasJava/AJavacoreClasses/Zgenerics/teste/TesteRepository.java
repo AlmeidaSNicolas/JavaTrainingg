@@ -25,10 +25,16 @@ public class TesteRepository {
         repositorio.save(12, carro);
 
 
-        Carro carroEncontrado = repositorio.findById(12);
-        System.out.println(repositorio.findAll());
-        System.out.println("Find : " + carroEncontrado);
-        System.out.println(repositorio.findById(99));
-        repositorio.deletebYid(12);
+        Carro carroEncontrado = repositorio.findById(12).orElseThrow(() -> new IllegalArgumentException("Carro nao encontrado"));
+        System.out.println(carroEncontrado);
+
+        repositorio.findById(12).ifPresent(s -> System.out.println("Achei : " + s));
+
+        Carro carroPadrão = repositorio.findById(13).orElse(new Carro("Carro padrão", 0));
+        System.out.println(carroPadrão);
+
+        Carro carroNaoExiste = repositorio.findById(99).orElseThrow(() -> new IllegalArgumentException("Carro nao existe"));
+        System.out.println(carroNaoExiste);
+
     }
 }

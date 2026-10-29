@@ -22,5 +22,11 @@ public class testeFilaT {
         fila.tamanho();
         fila.estaVazia();
 
+        FilaService<Integer> senhas = new FilaService<>();
+        senhas.entrar(1);
+
+        System.out.println(senhas.chamarProximo());
+        System.out.println(senhas.chamarProximo());
+
     }
 }

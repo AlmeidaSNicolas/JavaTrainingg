@@ -2,6 +2,7 @@ package nicolas.dev.aulasJava.AJavacoreClasses.Zgenerics.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class FilaService<T> {
     private List<T> fila = new ArrayList<>();
@@ -11,10 +12,12 @@ public class FilaService<T> {
         fila.add(item);
     }
 
-    public T chamarProximo(){
-        T t = fila.remove(0);
-        System.out.println(t);
-        return t;
+    public Optional<T> chamarProximo(){
+        if (fila.isEmpty()){
+            return Optional.empty();
+        }
+            T t = fila.remove(0);
+            return Optional.of(t);
     }
 
     public int tamanho(){
