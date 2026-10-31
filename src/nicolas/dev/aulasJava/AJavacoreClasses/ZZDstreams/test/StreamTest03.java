@@ -34,5 +34,7 @@ public class StreamTest03 {
         novels.stream().filter(ligthNovel -> ligthNovel.getTitle().toLowerCase(Locale.ROOT).contains("a") && ligthNovel.getPrice() <= 6).map(LigthNovel::getTitle).forEach(System.out::println);
 
 
+
+
     }
 }
